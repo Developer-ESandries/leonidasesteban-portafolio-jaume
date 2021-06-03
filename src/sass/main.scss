@@ -1,9 +1,11 @@
-@import "settings/allobjects";
-@import "settings/variables";
+// 1. Configuration and helpers
 
-@import "components/wrapper";
+@import "settings/variables", "settings/mixins";
 
-@import "components/button";
+// 3. Base stuff
+@import "base/base";
+
+@import "components/wrapper", "components/button", "components/social-icon";
 
 @import "layout/header";
 @import "layout/proyectos";

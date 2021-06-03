@@ -1,10 +1,12 @@
 .header {
-  padding: 0 auto;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   ul {
     display: none;
+  }
+  @include response-to(475px) {
+    padding: 0 calc((100% - 280px) / 2);
   }
 }
