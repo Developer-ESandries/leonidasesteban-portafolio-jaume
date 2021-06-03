@@ -97,15 +97,35 @@ body {
   }
 }
 
-.form {
-  padding-top: 10px;
-  padding-bottom: 30px;
+.formulario {
+  padding-top: 20px;
+}
+
+.form-container {
+  padding-bottom: 10px;
   padding-inline-start: 20px;
   padding-inline-end: 20px;
-  display: flex;
   max-width: 768px;
-  flex-direction: column;
   margin: 0 auto;
+}
+.form-container h2 {
+  font: bold 2.8rem/4.5rem "Poppins", sans-serif;
+  color: white;
+  padding-left: 10px;
+  max-width: 280px;
+  margin-bottom: 2px;
+  background-color: #440a67;
+  box-shadow: -4px 4px 0px #ffffff;
+}
+.form-container p {
+  font: 400 1.6rem/2.5rem "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
   font: bold 1.6rem/2rem "Poppins", sans-serif;
   color: #440a67;
   gap: 10px;

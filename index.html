@@ -267,35 +267,42 @@
 
       <!--ACA VA LA PARTE DLE FORMULARIO-->\
       <section class="formulario">
-        <form id="contacto" action="" method="POS" class="form">
-          <label for="form-name">Nombre Completo</label>
-          <input
-            required
-            name="name"
-            id="form-name"
-            type="text"
-            placeholder="Juan"
-          />
+        <div class="form-container">
+          <h2>Hablemos</h2>
+          <p>
+            Si está interesado en trabajar conmigo en su próximo proyecto, no
+            dude en ponerse en contacto conmigo.
+          </p>
+          <form class="form" id="contacto" action="" method="POS">
+            <label for="form-name">Nombre Completo</label>
+            <input
+              required
+              name="name"
+              id="form-name"
+              type="text"
+              placeholder="Juan"
+            />
 
-          <label for="form-email">Correo Electronico</label>
-          <input
-            required
-            name="email"
-            id="form-email"
-            type="email"
-            placeholder="Juandc@gmail.com"
-          />
+            <label for="form-email">Correo Electronico</label>
+            <input
+              required
+              name="email"
+              id="form-email"
+              type="email"
+              placeholder="correo"
+            />
 
-          <label for="form-message">Mensaje</label>
-          <textarea
-            required
-            name="message"
-            id="form-message"
-            cols="7"
-            rows="10"
-          ></textarea>
-          <button class="button primary" type="submit">enviar mensaje</button>
-        </form>
+            <label for="form-message">Mensaje</label>
+            <textarea
+              required
+              name="message"
+              id="form-message"
+              cols="6"
+              rows="8"
+            ></textarea>
+            <button class="button primary" type="submit">enviar mensaje</button>
+          </form>
+        </div>
 
         <footer class="footer">
           <svg
