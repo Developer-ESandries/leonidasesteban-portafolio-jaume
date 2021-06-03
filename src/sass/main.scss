@@ -5,7 +5,8 @@
 // 3. Base stuff
 @import "base/base";
 
-@import "components/wrapper", "components/button", "components/social-icon";
+@import "components/wrapper", "components/button", "components/social-icon",
+  "components/card";
 
 @import "layout/header";
 @import "layout/proyectos";

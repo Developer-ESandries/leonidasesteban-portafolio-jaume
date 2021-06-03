@@ -6,15 +6,17 @@ $color-black: #0f0a0a;
 $color-primary: #440a67;
 $color-secondary: #ffffff;
 $basefont: "Poppins", sans-serif;
+$secondary-font: "Oxygen", sans-serif;
 /*-----------------
  $FONTS
 -----------------*/
 $headline1: bold 9.5rem/15rem $basefont;
 $headline2: bold 5.9rem/9.5rem $basefont;
 $headline3: bold 4.2rem/5rem $basefont;
-$headline4: bold 3rem/4.5rem $basefont;
+$headline4: bold 2.8rem/4.5rem $basefont;
 $headline5: bold 2.2rem/2.6rem $basefont;
 $body1: 400 1.6rem/2.5rem $basefont;
 $body2: 400 1.6rem/2.5rem $basefont;
 $bodyheadline: 100 2rem/2.5rem $basefont;
 $button: bold 1.6rem/2rem $basefont;
+$recomendcar: bold 3rem/3.3rem $secondary-font;

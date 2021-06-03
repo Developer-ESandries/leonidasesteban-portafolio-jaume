@@ -41,7 +41,6 @@
         color: white;
         padding-left: 10px;
         max-width: 280px;
-        margin-left: 20px;
         margin-bottom: 5px;
         background-color: $color-primary;
         box-shadow: -4px 4px 0px #ffffff;
@@ -68,7 +67,9 @@
     }
 
     @include response-to(475px) {
+      max-width: 280px;
       display: block;
+      margin: 0 auto;
       height: 550px;
       gap: 16px;
       .proyeto-info {
@@ -95,5 +96,43 @@
   .proyecto01 {
     @extend %proyecto;
     flex-direction: row-reverse;
+  }
+  .proyecto02 {
+    @extend %proyecto;
+
+    .proyecto-photo {
+      img {
+        height: 100%;
+      }
+    }
+
+    @include response-to(475px) {
+      .proyecto-photo {
+        img {
+          height: 35vh;
+        }
+      }
+    }
+  }
+
+  .proyecto03 {
+    @extend %proyecto;
+    flex-direction: row-reverse;
+    .proyecto-photo {
+      text-align: center;
+      img {
+        height: 60vh;
+        width: 40vh;
+      }
+    }
+    @include response-to(475px) {
+      .proyecto-photo {
+        img {
+          max-width: 280px;
+          height: 40vh;
+          width: 25vh;
+        }
+      }
+    }
   }
 }
