@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    font: $body2;
+  }
+
+  @include response-to(768px) {
+    flex-direction: column-reverse;
+    gap: 7px;
+
+    p {
+      text-align: center;
+      display: block;
+    }
+    .footer-logo {
+      display: none;
+    }
+  }
+}

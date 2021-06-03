@@ -1,0 +1,36 @@
+.formulario {
+}
+
+.form {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  display: flex;
+  max-width: 768px;
+  flex-direction: column;
+  margin: 0 auto;
+  font: $button;
+  color: $color-primary;
+  gap: 10px;
+
+  %input {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #858c94;
+  }
+
+  input {
+    @extend %input;
+  }
+  textarea {
+    @extend %input;
+  }
+  @include response-to(475px) {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    textarea {
+      height: 110px;
+    }
+  }
+}

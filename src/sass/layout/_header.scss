@@ -2,13 +2,26 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1280px;
   margin: 0 auto;
+
   ul {
-    display: none;
+    list-style: none;
+    a {
+      text-decoration: none;
+      padding: 0 20px;
+      font: $button;
+      color: $color-primary;
+    }
+    display: flex;
   }
+
   @include response-to(475px) {
     padding: 0 calc((100% - 280px) / 2);
+
+    ul {
+      display: none;
+    }
   }
 }

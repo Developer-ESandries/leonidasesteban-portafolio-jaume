@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaume</title>
+    <title>Emanuel</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -73,9 +73,9 @@
           </a>
           <nav class="menu">
             <ul>
-              <li><a href="#">Hola</a></li>
+              <li><a href="#hero">Hola</a></li>
               <li><a href="#proyectos">Proyectos</a></li>
-              <li><a href="#">Hablemos</a></li>
+              <li><a href="#contacto">Hablemos</a></li>
             </ul>
           </nav>
           <a
@@ -88,12 +88,12 @@
     </header>
 
     <main class="wrapper main-container">
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="user-photo">
           <img
             src="./assets/images/photo-user.png"
-            alt="Foto de Jaume un telentoso desarrollador"
-            title="Foto de Jaume un telentoso desarrollador"
+            alt="Foto de Emanuel un telentoso desarrollador"
+            title="Foto de Emanuel un telentoso desarrollador"
           />
         </div>
         <div class="user-info">
@@ -142,7 +142,7 @@
         </div>
       </section>
       <!--ACA ESTA EL TEXTO DE INTRODUCION-->
-      <section id="#proyectos" class="introduction">
+      <section id="proyectos" class="introduction">
         <p class="introduccion">
           <span
             >A lo largo de mi carrera como Frontend, he tenido el privilegio de
@@ -183,7 +183,7 @@
             alt="Foto de LeonidasEsteban CEO"
           />
           <p>
-            "Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de
+            "Emanuel ha sido de gran ayuda para acelerar ciertos esfuerzos de
             desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5
             meses ".
           </p>
@@ -222,7 +222,7 @@
             alt="Foto de Jason Lopez"
           />
           <p>
-            "Jaume ha superado mis expectativas desde el diseño hasta el
+            "Emanuel ha superado mis expectativas desde el diseño hasta el
             desarrollo".
           </p>
           <p>JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
@@ -264,8 +264,134 @@
           <p>MARCO CORTEZ / NETNET</p>
         </div>
       </section>
-    </main>
 
-    <footer></footer>
+      <!--ACA VA LA PARTE DLE FORMULARIO-->\
+      <section class="formulario">
+        <form id="contacto" action="" method="POS" class="form">
+          <label for="form-name">Nombre Completo</label>
+          <input
+            required
+            name="name"
+            id="form-name"
+            type="text"
+            placeholder="Juan"
+          />
+
+          <label for="form-email">Correo Electronico</label>
+          <input
+            required
+            name="email"
+            id="form-email"
+            type="email"
+            placeholder="Juandc@gmail.com"
+          />
+
+          <label for="form-message">Mensaje</label>
+          <textarea
+            required
+            name="message"
+            id="form-message"
+            cols="7"
+            rows="10"
+          ></textarea>
+          <button class="button primary" type="submit">enviar mensaje</button>
+        </form>
+
+        <footer class="footer">
+          <svg
+            class="footer-logo"
+            height="30"
+            viewBox="0 0 64 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo-icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M63.6359 0.000122603C63.6278 0.0664713 63.6127 0.132941 63.6126 0.199411C63.6114 3.33545 63.6116 6.4715 63.6116 9.60754C63.6116 9.67048 63.6116 9.73342 63.6116 9.8173C63.5429 9.8173 63.4817 9.8173 63.4205 9.8173C58.5921 9.8173 53.7638 9.8173 48.9354 9.8173C46.5008 9.8173 44.4478 11.5737 44.082 13.984C44.0328 14.3088 44.0398 14.644 44.0396 14.9742C44.0377 19.7319 44.0393 24.4895 44.0399 29.247C44.0399 29.2902 44.0399 29.3334 44.0399 29.388C43.8439 29.388 43.6557 29.3989 43.4692 29.3863C41.1374 29.229 39.099 28.3724 37.3876 26.7777C35.6846 25.1912 34.6791 23.23 34.3545 20.9259C34.2928 20.4889 34.2662 20.0435 34.2654 19.602C34.2581 16.3539 34.2535 13.1059 34.2639 9.85784C34.2723 7.24199 35.1622 4.96215 36.9618 3.0591C38.509 1.42303 40.4096 0.444232 42.6387 0.114314C42.9365 0.0702439 43.2384 0.0541755 43.5382 0.0237403C43.5697 0.0205751 43.6002 0.00815663 43.6313 0C50.2994 0.000121741 56.9676 0.000122603 63.6359 0.000122603Z"
+              fill="#440a67"
+            />
+            <path
+              class="logo-icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M34.2568 0.000488281C34.2188 0.0346974 34.1852 0.0758447 34.1427 0.102384C31.7427 1.5959 30.2168 3.71456 29.6023 6.47807C29.3681 7.53125 29.3279 8.5977 29.4583 9.66963C29.4634 9.71163 29.4626 9.75449 29.4652 9.8128C29.388 9.8128 29.3211 9.8128 29.2541 9.8128C19.5709 9.8128 9.88778 9.8128 0.204552 9.81292C0.136531 9.81292 0.0685095 9.81596 0.000488281 9.81755C0.000488281 9.57407 0.000488281 9.33058 0.000488281 9.0871C0.00961457 9.05131 0.0227562 9.016 0.0271368 8.97972C0.0607215 8.70459 0.0799479 8.42702 0.12704 8.15432C0.516306 5.9026 1.55549 4.00369 3.25967 2.48303C4.85117 1.0628 6.71853 0.255534 8.84447 0.0538093C9.01178 0.037983 9.17873 0.0183842 9.34593 0.000488281C17.6493 0.000488281 25.9531 0.000488281 34.2568 0.000488281Z"
+              fill="#440a67"
+            />
+            <path
+              class="logo-icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M34.2568 0.000488281C34.2188 0.0346974 34.1852 0.0758447 34.1427 0.102384C31.7427 1.5959 30.2168 3.71456 29.6023 6.47807C29.3681 7.53125 29.3279 8.5977 29.4583 9.66963C29.4634 9.71163 29.4626 9.75449 29.4652 9.8128C29.388 9.8128 29.3211 9.8128 29.2541 9.8128C19.5709 9.8128 9.88778 9.8128 0.204552 9.81292C0.136531 9.81292 0.0685095 9.81596 0.000488281 9.81755C0.000488281 9.57407 0.000488281 9.33058 0.000488281 9.0871C0.00961457 9.05131 0.0227562 9.016 0.0271368 8.97972C0.0607215 8.70459 0.0799479 8.42702 0.12704 8.15432C0.516306 5.9026 1.55549 4.00369 3.25967 2.48303C4.85117 1.0628 6.71853 0.255534 8.84447 0.0538093C9.01178 0.037983 9.17873 0.0183842 9.34593 0.000488281C17.6493 0.000488281 25.9531 0.000488281 34.2568 0.000488281Z"
+              fill="#440a67"
+            />
+            <path
+              class="logo-icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 39.1812C0.0680213 39.1829 0.136042 39.1858 0.204064 39.1858C9.85457 39.186 19.5049 39.186 29.1554 39.186C29.2229 39.186 29.2903 39.186 29.3684 39.186C29.3684 42.4553 29.3684 45.7143 29.3684 48.9936C29.3177 48.9936 29.2661 48.9936 29.2143 48.9936C22.6786 48.9936 16.1426 49.0132 9.60694 48.9836C7.13554 48.9724 4.97091 48.071 3.15161 46.3941C1.44913 44.8246 0.439035 42.8767 0.0945479 40.5857C0.0564609 40.3328 0.0311511 40.078 0 39.8241C0 39.6098 0 39.3954 0 39.1812Z"
+              fill="#440a67"
+            />
+            <path
+              class="logo-icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 19.6055C8.1505 19.6055 16.301 19.6055 24.4597 19.6055C24.4597 22.8741 24.4597 26.1283 24.4597 29.3983C24.3989 29.3983 24.3467 29.3983 24.2944 29.3983C16.2449 29.3983 8.19528 29.3983 0.145655 29.3981C0.0971035 29.3981 0.0485518 29.395 0 29.3934C0 26.1308 0 22.8681 0 19.6055Z"
+              fill="#440a67"
+            />
+            <path
+              class="logo-icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M53.8232 19.5825C54.2938 19.6227 54.7461 19.6396 55.1919 19.7032C57.1825 19.9871 58.9317 20.8015 60.4157 22.16C62.1243 23.724 63.1558 25.6603 63.5079 27.9504C63.575 28.3863 63.6061 28.8319 63.607 29.2732C63.6149 32.6233 63.6241 35.9734 63.607 39.3235C63.5952 41.6761 62.801 43.7563 61.2818 45.5466C59.8218 47.2671 57.9734 48.3591 55.7601 48.8009C55.1768 48.9174 54.5739 48.989 53.98 48.9902C47.4679 49.0034 40.9557 48.9985 34.4435 48.9985C34.3903 48.9985 34.337 48.9985 34.2725 48.9985C34.2725 45.7311 34.2725 42.4714 34.2725 39.1861C34.3255 39.1861 34.3814 39.1861 34.4371 39.1861C39.3188 39.1857 44.2005 39.1913 49.0822 39.1807C50.2461 39.1781 51.2704 38.7505 52.14 37.9844C53.2612 36.9966 53.8202 35.7395 53.8216 34.2458C53.826 29.4348 53.8233 24.6239 53.8233 19.813C53.8232 19.7504 53.8232 19.6877 53.8232 19.5825Z"
+              fill="#440a67"
+            />
+          </svg>
+          <p>
+            <span>
+              Hecho con
+              <img src="./assets/svg/corazon.svg" alt="corazon" /> Emanuel.
+            </span>
+            <span>Copyright 2021 - Todos los derechos reservados.</span>
+          </p>
+
+          <div class="social">
+            <a href="tel:+50662636566" class="social-icons">
+              <img
+                src="./assets/icons/icon-phone.svg"
+                alt="Icono del telefono"
+              />
+            </a>
+            <a href="mailto:emanuelsandries@gmail.com" class="social-icons">
+              <img
+                src="./assets/icons/icon-important_mail.svg"
+                alt="Icono de mail"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/dev.esandries/"
+              class="social-icons"
+              target="_blank"
+            >
+              <img
+                src="./assets/icons/icon-instagram.svg"
+                alt="Icono de instagram"
+              />
+            </a>
+            <a
+              href="https://twitter.com/ESandries"
+              target="_blank"
+              class="social-icons"
+            >
+              <img
+                src="./assets/icons/icon-twitter_squared.svg"
+                alt="Icono de twiter"
+              />
+            </a>
+          </div>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>
