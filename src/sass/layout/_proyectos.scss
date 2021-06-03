@@ -1,0 +1,13 @@
+.main-container {
+  width: 100vw;
+  height: 90%;
+  display: block;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+
+  section {
+    height: 90vh;
+    width: 100vw;
+    scroll-snap-align: start;
+  }
+}

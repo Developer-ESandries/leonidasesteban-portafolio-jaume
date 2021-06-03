@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(50% 50% at 50% 50%, #ff84b7 0%, #e899f2 100%);
+}
+
+/*-----------------
+ $COLORS
+-----------------*/
+/*-----------------
+ $FONTS
+-----------------*/
+.wrapper {
+  padding: 0 20px;
+}
+
+.button {
+  padding: 8px 20px;
+  font: bold 1.6rem/2rem "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.button.primary {
+  border: solid 4px #440a67;
+  background-color: #440a67;
+  color: white;
+}
+.button.primary:hover {
+  background: #500c7a;
+}
+
+.button.secondary {
+  color: #440a67;
+  border: solid 4px #440a67;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header ul {
+  display: none;
+}
+
+.main-container {
+  width: 100vw;
+  height: 90%;
+  display: block;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.main-container section {
+  height: 90vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero .user-photo {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+.hero .user-photo img {
+  width: 100%;
+}
+.hero .user-info {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+}
+.hero .user-info h1 {
+  font: bold 2.4rem/2rem "Poppins", sans-serif;
+}
+.hero .user-info h1 span:nth-child(2) {
+  display: block;
+  font: bold 4.2rem/5rem "Poppins", sans-serif;
+}
+.hero .user-info p {
+  font: 400 1.6rem/2.5rem "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

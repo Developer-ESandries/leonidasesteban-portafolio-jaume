@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  .user-photo {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  .user-info {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+    h1 {
+      font: $headline5;
+      span:nth-child(2) {
+        display: block;
+        font: $headline3;
+      }
+    }
+    p {
+      font: $body1;
+    }
+  }
+}
