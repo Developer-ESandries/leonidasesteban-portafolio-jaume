@@ -10,4 +10,22 @@
     width: 100vw;
     scroll-snap-align: start;
   }
+  .introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      font: $bodyheadline;
+      span:nth-child(2) {
+        display: block;
+        font: $headline5;
+      }
+    }
+    @include response-to(475px) {
+      padding: 0 calc((100% - 280px) / 2);
+      height: 550px;
+      gap: 16px;
+    }
+  }
 }
