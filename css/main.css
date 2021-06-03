@@ -111,13 +111,80 @@ body {
     gap: 16px;
   }
 }
+.main-container .proyecto01 {
+  display: flex;
+  align-items: center;
+}
+.main-container .proyecto01 .proyeto-info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.main-container .proyecto01 .proyeto-info h2 {
+  font: bold 3rem/4.5rem "Poppins", sans-serif;
+  color: white;
+  padding-left: 10px;
+  max-width: 280px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  background-color: #440a67;
+  box-shadow: -4px 4px 0px #ffffff;
+}
+.main-container .proyecto01 .proyeto-info p {
+  font: 400 1.6rem/2.5rem "Poppins", sans-serif;
+}
+.main-container .proyecto01 .proyeto-info div {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.main-container .proyecto01 .proyeto-info div a {
+  margin-right: 16px;
+}
+.main-container .proyecto01 .proyecto-photo {
+  padding-top: 5px;
+  width: 50%;
+  text-align: center;
+}
+.main-container .proyecto01 .proyecto-photo img {
+  width: 90%;
+}
+@media only screen and (max-width: 475px) {
+  .main-container .proyecto01 {
+    display: block;
+    height: 550px;
+    gap: 16px;
+  }
+  .main-container .proyecto01 .proyeto-info {
+    width: 100%;
+  }
+  .main-container .proyecto01 .proyeto-info div {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .main-container .proyecto01 .proyeto-info div a {
+    text-align: center;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .main-container .proyecto01 .proyecto-photo {
+    width: 100%;
+  }
+  .main-container .proyecto01 .proyecto-photo img {
+    width: 280px;
+  }
+}
+.main-container .proyecto01 {
+  flex-direction: row-reverse;
+}
 
 .hero {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 1280px;
+  padding: 0 auto;
 }
 .hero .user-photo {
   width: 280px;

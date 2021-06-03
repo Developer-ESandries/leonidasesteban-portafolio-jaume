@@ -28,4 +28,72 @@
       gap: 16px;
     }
   }
+
+  %proyecto {
+    display: flex;
+    align-items: center;
+    .proyeto-info {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      h2 {
+        font: $headline4;
+        color: white;
+        padding-left: 10px;
+        max-width: 280px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        background-color: $color-primary;
+        box-shadow: -4px 4px 0px #ffffff;
+      }
+      p {
+        font: $body1;
+      }
+      div {
+        padding-top: 16px;
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 16px;
+        }
+      }
+    }
+    .proyecto-photo {
+      padding-top: 5px;
+      width: 50%;
+      text-align: center;
+      img {
+        width: 90%;
+      }
+    }
+
+    @include response-to(475px) {
+      display: block;
+      height: 550px;
+      gap: 16px;
+      .proyeto-info {
+        width: 100%;
+        div {
+          flex-direction: column;
+          gap: 16px;
+          a {
+            text-align: center;
+            width: 100%;
+            margin: 0 10px;
+          }
+        }
+      }
+
+      .proyecto-photo {
+        width: 100%;
+        img {
+          width: 280px;
+        }
+      }
+    }
+  }
+  .proyecto01 {
+    @extend %proyecto;
+    flex-direction: row-reverse;
+  }
 }
